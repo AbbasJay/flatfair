@@ -1,0 +1,167 @@
+$primary-colour: #6785ff;
+$primary-darken: darken($primary-colour, 40%);
+$primary-shadow: grey;
+$error-color: red;
+$background-color: white;
+
+.form-container {
+  width: 800px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 15px;
+  height: calc(100vh - 30px);
+  display: flex;
+  background-color: $background-color;
+  background-image: url(https://flatfair.co.uk/wp-content/uploads/2018/12/flatfair-landlords-hero.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 12px;
+  flex-direction: column;
+
+  .card-container {
+    height: fit-content;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 11px $primary-shadow;
+    background-color: $background-color;
+    margin-top: 100px;
+
+    .card {
+      display: flex;
+      justify-content: center;
+      color: $primary-colour;
+      .amounts-container {
+        span {
+          font-size: larger;
+        }
+
+        .inputs {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 15px;
+
+          .correct-input {
+            margin-left: 8px;
+            height: 20px;
+            font-size: large;
+            color: $primary-darken;
+          }
+          .incorrect-input {
+            margin-left: 8px;
+            height: 20px;
+            font-size: large;
+            color: $error-color;
+            border: 2px solid $error-color;
+          }
+        }
+        .error-message {
+          display: flex;
+          justify-content: flex-end;
+          color: $error-color;
+        }
+      }
+    }
+  }
+
+  .select-container {
+    height: 73px;
+    margin-left: 8px;
+  }
+  .select-option {
+    height: 25px;
+    font-size: 18px;
+    margin-top: 15px;
+    color: $primary-colour;
+  }
+
+  .form-button {
+    display: flex;
+    justify-content: center;
+
+    .submit-button {
+      width: 75px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: $primary-colour;
+      color: $background-color;
+      font-size: 20px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin: 15px;
+    }
+    .submit-button:hover {
+      background-color: $primary-darken;
+      transition: ease-in-out 50ms all;
+    }
+
+    .clear-button {
+      width: 75px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: $primary-colour;
+      color: $background-color;
+      font-size: 20px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin: 15px;
+    }
+    .clear-button:hover {
+      background-color: $primary-darken;
+      transition: ease-in-out 50ms all;
+    }
+  }
+}
+
+.membership-fee {
+  display: flex;
+  justify-content: center;
+  margin-top: 13px;
+}
+.membership-fee-info {
+  width: 475px;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 11px $primary-shadow;
+  background-color: $background-color;
+  color: $primary-colour;
+
+  .fee {
+    padding: 0;
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+}
+.created-post {
+  display: flex;
+  justify-content: center;
+  margin-top: 13px;
+}
+.created-post-info {
+  width: 475px;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 11px $primary-shadow;
+  background-color: $background-color;
+  color: $primary-colour;
+
+  .status {
+    padding: 0;
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+}

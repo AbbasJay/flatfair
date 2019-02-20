@@ -1,0 +1,74 @@
+$primary-colour: #6785ff;
+$primary-darken: darken($primary-colour, 40%);
+
+.welcome-container {
+  width: 100vw;
+  height: 100vh;
+
+  .display-container {
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 15px;
+    height: calc(100vh - 51px);
+    display: flex;
+    background-color: white;
+    background-image: url(https://flatfair.co.uk/wp-content/uploads/2018/12/agents-hero.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 12px;
+  }
+
+  .info-container {
+    position: absolute;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    bottom: 135px;
+
+    .info {
+      height: fit-content;
+      width: 500px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 11px grey;
+      background-color: white;
+
+      ul {
+        font-size: 20px;
+        font-weight: bold;
+        color: $primary-colour;
+      }
+    }
+  }
+  .back-button-container {
+    position: absolute;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    bottom: 35px;
+  }
+  .back-button {
+    width: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 11px grey;
+    background-color: white;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: $primary-colour;
+    transition: ease-in-out 50ms all;
+    cursor: pointer;
+  }
+  .back-button:hover {
+    width: 65px;
+    height: 35px;
+    font-size: 20px;
+    background-color: $primary-darken;
+    transition: ease-in-out 50ms all;
+  }
+}
